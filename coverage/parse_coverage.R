@@ -13,7 +13,7 @@ temp <- list.files (".", full.names = FALSE, pattern = "\\.samtools_depth.csv$")
 
 for (file_name in 1:length(temp)){
   cov <- read.table(temp[file_name])
-  sample_id <- gsub(".bqsr.cram.samtools_depth.csv","", file_name)
+  sample_id <- gsub(".bqsr.cram.samtools_depth.csv","", temp[file_name])
   colnames(cov) <- c("chr", "pos", "reads")
   cov_filt <- cov %>% filter(grepl("^P", chr)) %>%
       mutate(reads_count = n()) %>%
