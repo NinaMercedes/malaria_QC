@@ -7,7 +7,7 @@ import numpy as np
 # Execute the first bash command to go through bam files and use sambamba to calculate depth of coverage in windows across the genome
 # windows for plasmodium were 1000, but for anopheles I could use 10x this 10,000, because the genome is 10x the size
 # samtools depth ur1001_Combined.mkdup.bam > ur1001_samtools_depth.csv
-subprocess.run('for f in *bqsr.cram ; do samtools depth "$f" > "$f.samtools_depth.csv" ; done', shell=True)
+subprocess.run('for f in *bam ; do samtools depth "$f" > "$f.samtools_depth.csv" ; done', shell=True)
 
 # take samtools_depth.csv and convert it to be in windows instead of each position
 
