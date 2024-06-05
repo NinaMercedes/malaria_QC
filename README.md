@@ -5,3 +5,4 @@ Calculating coverage and making coverage plots for P falciparum data:
 
 We are often interested in other QC metrics such as % of genome with coverage> 5. This can be calculated using the 'parse_coverage.R' script or 'get_region_cov.R' for specific regions.
 
+Credit to Sophie Moss, Holly Acford Palmer, Matthew Higgins and Emilia Manko for code development.
