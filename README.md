@@ -8,7 +8,8 @@ For use reccomend installing the following conda environment.
 ```
 conda create -n cov_plots_malaria
 conda activate cov_plots_malaria
-conda install python >=3.7
+conda install python=3.7
+conda install matplotlib
 conda install samtools
 conda install R
 conda install conda-forge::r-dplyr
