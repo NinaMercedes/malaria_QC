@@ -77,7 +77,7 @@ for sample_name in sample_names:
   # Construct the file paths
   input_file = sample_name + '.bqsr.cram.samtools_windowed_depth_filtered.csv'
   output_file1 = 'mean_windowed_depth_filtered_all.csv'
-  output_file2 = 'Brazil_pass_QC.csv'
+  output_file2 = 'all_pass_QC.csv'
   # Read the input file
   df = pd.read_csv(input_file, sep='\t', error_bad_lines=False, warn_bad_lines=True)
   # Add the header
